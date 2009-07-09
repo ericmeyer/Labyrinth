@@ -21,4 +21,8 @@
 	return self;
 }
 
+- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
+	self.velocity = acceleration.x;
+}
+
 @end

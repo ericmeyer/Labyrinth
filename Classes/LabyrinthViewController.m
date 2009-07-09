@@ -29,13 +29,20 @@
 */
 
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	ball = [[Ball alloc] init];
+	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
+	accelerometer.delegate = ball;
+	accelerometer.updateInterval = 1.0f/60.0f;
+	
+	[ball addObserver:self forKeyPath:@"velocity" options:NSKeyValueObservingOptionNew context:nil];
+	[super viewDidLoad];
 }
-*/
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+	[label setText: [NSString stringWithFormat: @"%f", ball.velocity]];
+}
 
 /*
 // Override to allow orientations other than the default portrait orientation.

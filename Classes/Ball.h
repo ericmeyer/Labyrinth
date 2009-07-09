@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-
-@interface Ball : NSObject {
+@interface Ball : NSObject <UIAccelerometerDelegate> {
 	float velocity;
 }
+
+- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration;
 
 @property float velocity;
 
