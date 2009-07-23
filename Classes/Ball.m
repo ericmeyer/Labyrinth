@@ -28,9 +28,9 @@
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
 //	[self handleAcceleration: acceleration.x y: acceleration.y z: acceleration.z];
 	//	self.xVelocity = acceleration.x;
-	xVelocity = acceleration.x;
-	yVelocity = acceleration.y;
-	zVelocity = acceleration.z;
+	self.xVelocity = acceleration.x;
+	self.yVelocity = acceleration.y;
+	self.zVelocity = acceleration.z;
 	NSLog(@"in accelerometer %f", acceleration.x);
 }
 
