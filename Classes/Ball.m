@@ -7,7 +7,6 @@
 //
 
 #import "Ball.h"
-#import "AccelerometerSimulation.h"
 
 @implementation Ball
 
@@ -31,6 +30,7 @@
 	self.xVelocity = acceleration.x;
 	self.yVelocity = acceleration.y;
 	self.zVelocity = acceleration.z;
+
 	NSLog(@"in accelerometer %f", acceleration.x);
 }
 

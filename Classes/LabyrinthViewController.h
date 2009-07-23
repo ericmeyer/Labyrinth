@@ -12,6 +12,8 @@
 @interface LabyrinthViewController : UIViewController {
 	IBOutlet Ball *ball;
 	IBOutlet UILabel *label;
+	IBOutlet UILabel *yVelocity;
+	IBOutlet UILabel *zVelocity;
 }
 
 @end

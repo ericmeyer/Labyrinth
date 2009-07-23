@@ -45,6 +45,8 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
 	NSLog(@"************************************************observe me!");
 	[label setText: [NSString stringWithFormat: @"%f", ball.xVelocity]];
+	[yVelocity setText: [NSString stringWithFormat: @"%f", ball.yVelocity]];
+	[zVelocity setText: [NSString stringWithFormat: @"%f", ball.zVelocity]];
 }
 
 /*
