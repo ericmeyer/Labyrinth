@@ -7,6 +7,7 @@
 //
 
 #import "LabyrinthViewController.h"
+#import "AccelerometerSimulation.h"
 
 @implementation LabyrinthViewController
 
@@ -22,26 +23,28 @@
 }
 */
 
-/*
+
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
-}
-*/
-
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-	ball = [[Ball alloc] init];
+	[super loadView];
+	NSLog(@"hey");
+	NSLog(@"%@", ball);
 	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
 	accelerometer.delegate = ball;
 	accelerometer.updateInterval = 1.0f/60.0f;
 	
-	[ball addObserver:self forKeyPath:@"velocity" options:NSKeyValueObservingOptionNew context:nil];
-	[super viewDidLoad];
+	[ball addObserver:self forKeyPath:@"xVelocity" options:NSKeyValueObservingOptionNew context:NULL];
 }
 
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+//- (void)viewDidLoad {
+//	[super viewDidLoad];
+//}
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-	[label setText: [NSString stringWithFormat: @"%f", ball.velocity]];
+	NSLog(@"************************************************observe me!");
+	[label setText: [NSString stringWithFormat: @"%f", ball.xVelocity]];
 }
 
 /*

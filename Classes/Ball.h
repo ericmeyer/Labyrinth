@@ -10,11 +10,15 @@
 #import <UIKit/UIKit.h>
 
 @interface Ball : NSObject <UIAccelerometerDelegate> {
-	float velocity;
+	float xVelocity;
+	float yVelocity;
+	float zVelocity;	
 }
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration;
 
-@property float velocity;
+@property float xVelocity;
+@property float yVelocity;
+@property float zVelocity;
 
 @end

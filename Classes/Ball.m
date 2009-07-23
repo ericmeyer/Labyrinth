@@ -7,22 +7,31 @@
 //
 
 #import "Ball.h"
-
+#import "AccelerometerSimulation.h"
 
 @implementation Ball
 
-@synthesize velocity;
+@synthesize xVelocity;
+@synthesize yVelocity;
+@synthesize zVelocity;
 
 -(id) init {
 	[super init];
 	
-	self.velocity = 0;
+	self.xVelocity = 0;
+	self.yVelocity = 0;
+	self.zVelocity = 0;
 	
 	return self;
 }
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
-	self.velocity = acceleration.x;
+//	[self handleAcceleration: acceleration.x y: acceleration.y z: acceleration.z];
+	//	self.xVelocity = acceleration.x;
+	xVelocity = acceleration.x;
+	yVelocity = acceleration.y;
+	zVelocity = acceleration.z;
+	NSLog(@"in accelerometer %f", acceleration.x);
 }
 
 @end

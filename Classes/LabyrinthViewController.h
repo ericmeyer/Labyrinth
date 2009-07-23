@@ -10,7 +10,7 @@
 #import "Ball.h"
 
 @interface LabyrinthViewController : UIViewController {
-	Ball *ball;
+	IBOutlet Ball *ball;
 	IBOutlet UILabel *label;
 }
 
