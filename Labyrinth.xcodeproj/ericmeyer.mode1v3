@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -253,7 +255,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>132</real>
+								<real>265</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -274,13 +276,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
-									<integer>6</integer>
+									<integer>5</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {132, 760}}</string>
+							<string>{{0, 0}, {265, 760}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -292,11 +294,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {149, 778}}</string>
+						<string>{{0, 0}, {282, 778}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>132</real>
+							<real>265</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>0 59 1440 819 0 0 1440 878 </string>
@@ -304,20 +306,18 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>149pt</string>
+					<string>282pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>LabyrinthViewController.m</string>
+								<string>UIAcceleration+Settable.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,26 +325,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>LabyrinthViewController.m</string>
+										<string>UIAcceleration+Settable.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F84C30571019F183003FA58C</string>
+										<string>F84C30C61019F81F003FA58C</string>
 										<key>history</key>
 										<array>
 											<string>F8C2873210069D39002ECCBB</string>
 											<string>F8C288151006A88E002ECCBB</string>
-											<string>F812D5D51011031C00B89DC4</string>
-											<string>F84C9A3E1017E6060021B6DD</string>
 											<string>F84C9A7D1017EF300021B6DD</string>
 											<string>F84C9A8D1017F0E20021B6DD</string>
 											<string>F8CF495C1018F1F2006304FE</string>
 											<string>F80F815F101923150004D449</string>
 											<string>F80F8176101923470004D449</string>
 											<string>F8E2F5C81019285E004CE28F</string>
-											<string>F8E2F5DB1019296D004CE28F</string>
-											<string>F8E2F5EB1019427B004CE28F</string>
-											<string>F8E2F5EF1019427B004CE28F</string>
+											<string>F84C30C31019F81F003FA58C</string>
+											<string>F84C30C41019F81F003FA58C</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -361,6 +358,7 @@
 											<string>F8CCA7FE100FE2080093EC7C</string>
 											<string>F84C9A7E1017EF300021B6DD</string>
 											<string>F8CF49611018F1F2006304FE</string>
+											<string>F84C30C51019F81F003FA58C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -372,7 +370,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1286, 690}}</string>
+								<string>{{0, 0}, {1153, 690}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1440 819 0 0 1440 878 </string>
 							</dict>
@@ -392,7 +390,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 695}, {1286, 83}}</string>
+								<string>{{0, 695}, {1153, 83}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1440 819 0 0 1440 878 </string>
 							</dict>
@@ -403,7 +401,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1286pt</string>
+					<string>1153pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -418,9 +416,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>F84C30581019F183003FA58C</string>
+				<string>F84C30C71019F81F003FA58C</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>F84C30591019F183003FA58C</string>
+				<string>F84C30C81019F81F003FA58C</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -554,7 +552,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>F8C286FF10069B07002ECCBB</string>
 		<string>/Users/ericmeyer/Projects/iPhone/Labyrinth/Labyrinth.xcodeproj</string>
@@ -637,7 +634,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>F8C286FF10069B07002ECCBB</string>
-				<string>F84C305A1019F183003FA58C</string>
+				<string>F84C30C91019F81F003FA58C</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -757,13 +754,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>F84C305B1019F183003FA58C</string>
+				<string>F84C30CA1019F81F003FA58C</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>F84C305C1019F183003FA58C</string>
-				<string>F84C305D1019F183003FA58C</string>
-				<string>F84C305E1019F183003FA58C</string>
-				<string>F84C305F1019F183003FA58C</string>
-				<string>F84C30601019F183003FA58C</string>
+				<string>F84C30CB1019F81F003FA58C</string>
+				<string>F84C30CC1019F81F003FA58C</string>
+				<string>F84C30CD1019F81F003FA58C</string>
+				<string>F84C30CE1019F81F003FA58C</string>
+				<string>F84C30CF1019F81F003FA58C</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
