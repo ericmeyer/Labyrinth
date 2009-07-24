@@ -1,34 +1,14 @@
-//
-//  SettableUIAccelerate.m
-//  Labyrinth
-//
-//  Created by Eric Meyer on 7/16/09.
-//  Copyright 2009 8th Light. All rights reserved.
-//
+#import "UIAcceleration+Settable.h"
 
--(id)init
+@implementation UIAcceleration (Settable)
+
+-(id)initWithX: (double) myX withY: (double) myY andZ: (double) myZ
 {
 	[super init];
-	myX = 0.0f;
-	myY = 0.0f;
-	myX = 0.0f;
-}
-
-@implementation UIAcceleration
-
--(double) getx
-{
-	return myX;
-}
-
--(double) gety
-{
-	return myX;
-}
-
--(double) getz
-{
-	return myX;
+	x = myX;
+	y = myY;
+	z = myZ;
+	return self;
 }
 
 @end

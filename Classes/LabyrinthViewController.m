@@ -46,7 +46,7 @@
 	NSLog(@"************************************************observe me!");
 	[label setText: [NSString stringWithFormat: @"%f", ball.xVelocity]];
 	[yVelocity setText: [NSString stringWithFormat: @"%f", ball.yVelocity]];
-	[zVelocity setText: [NSString stringWithFormat: @"%f", ball.zVelocity]];
+	[zVelocity setCenter: CGPointMake(ball.xPos, ball.yPos)];
 }
 
 /*

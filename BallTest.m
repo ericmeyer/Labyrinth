@@ -19,8 +19,7 @@
 
 -(void) testChangeXVelocity {
 	UIAcceleration* acceleration;
-	acceleration = [[UIAcceleration alloc] init];
-	acceleration.x = 1.5f;
+	acceleration = [[UIAcceleration alloc] initWithX: 0.5f withY: 0.0 andZ: 0.0f];
 	STAssertEquals(0.5f, (float)acceleration.x, nil);
 }
 
