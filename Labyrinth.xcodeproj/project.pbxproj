@@ -38,7 +38,6 @@
 		8D1107310486CEB800E47090 /* Labyrinth-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Labyrinth-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		F84C9A6D1017EEFC0021B6DD /* AccelerometerSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerSimulation.h; sourceTree = "<group>"; };
 		F84C9A6E1017EEFC0021B6DD /* AccelerometerSimulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerSimulation.m; sourceTree = "<group>"; };
-		F8C286F510069AC8002ECCBB /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		F8C2878A10069ECF002ECCBB /* UT2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UT2-Info.plist"; sourceTree = "<group>"; };
 		F8C2879510069F20002ECCBB /* Unit Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C2879610069F20002ECCBB /* Unit Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unit Tests-Info.plist"; sourceTree = "<group>"; };
@@ -104,7 +103,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				F8C286F510069AC8002ECCBB /* UnitTests-Info.plist */,
 				F8C2878A10069ECF002ECCBB /* UT2-Info.plist */,
 				F8C2879610069F20002ECCBB /* Unit Tests-Info.plist */,
 			);

@@ -43,10 +43,10 @@
 //}
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-	NSLog(@"************************************************observe me!");
-	[label setText: [NSString stringWithFormat: @"%f", ball.xVelocity]];
-	[yVelocity setText: [NSString stringWithFormat: @"%f", ball.yVelocity]];
-	[zVelocity setCenter: CGPointMake(ball.xPos, ball.yPos)];
+	NSLog(@"************************************************observe");
+	[label setText: [NSString stringWithFormat: @"%f", ball.xPos]];
+	[yVelocity setText: [NSString stringWithFormat: @"%f", ball.yPos]];
+	[zVelocity setCenter: CGPointMake((int)ball.xPos, (int)ball.yPos)];
 }
 
 /*

@@ -1,11 +1,3 @@
-//
-//  Ball.m
-//  Labyrinth
-//
-//  Created by Eric Meyer on 7/9/09.
-//  Copyright 2009 8th Light. All rights reserved.
-//
-
 #import "Ball.h"
 
 @implementation Ball
@@ -15,6 +7,7 @@
 @synthesize zVelocity;
 @synthesize xPos;
 @synthesize yPos;
+@synthesize accelerationCoefficient;
 
 -(id) init {
 	[super init];
@@ -24,43 +17,38 @@
 	self.zVelocity = 0;
 	self.xPos = 50;
 	self.yPos = 50;
+	self.accelerationCoefficient = 9.0f;
 	
 	return self;
 }
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
-//	[self handleAcceleration: acceleration.x y: acceleration.y z: acceleration.z];
-	//	self.xVelocity = acceleration.x;
-//	self.xPos = (xVelocity/60.0 + xPos)*100;
-//	self.yPos = (yVelocity/60.0 + yPos)*100;
-//	self.xPos = 200;
-//	self.yPos = 50;
-	if(acceleration.x < 0) {
-		xPos++;
-	}
-	else {
-		xPos--;
-	}
-	if(acceleration.y > 0) {
-		yPos++;
-	}
-	else {
-		yPos--;
-	}
+	self.xVelocity = accelerationCoefficient * acceleration.x * -1.0f + self.xVelocity;
 	
-	self.xVelocity = xVelocity + acceleration.x/60.0;
-	self.yVelocity = yVelocity + acceleration.y/60.0;
-	self.zVelocity = acceleration.z;
 	
-	if(xPos < 10 || xPos > 200) {
-		self.xVelocity = -0.9*xVelocity;
+	self.xPos = 1/60.0f * self.xVelocity + self.xPos;
+	
+	self.yVelocity = accelerationCoefficient * acceleration.y + self.yVelocity;
+	
+	self.yPos = 1/60.0f * self.yVelocity + self.yPos;
+	
+	if(self.xPos < 0 || self.xPos > 320)
+	{
+		self.xVelocity = self.xVelocity * -0.9;
+		if(self.xPos > 320)
+			self.xPos = 319;
+		if(self.xPos < 0)
+			self.xPos = 1;
 	}
-	
-	if(yPos < 10 || yPos > 200) {
-		self.yVelocity = -0.9*yVelocity;
+	if(self.yPos < 0 || self.yPos > 450)
+	{
+		self.yVelocity = self.yVelocity * -0.9;
+		
+		if(self.yPos > 450)
+			self.yPos = 449;
+		if(self.yPos < 0)
+			self.yPos = 1;
 	}
-	
-	NSLog(@"in accelerometer %d, %d", self.xPos, self.yPos);
 }
 
 @end

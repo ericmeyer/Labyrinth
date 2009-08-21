@@ -13,8 +13,9 @@
 	float xVelocity;
 	float yVelocity;
 	float zVelocity;	
-	int xPos;
-	int yPos;
+	float xPos;
+	float yPos;
+	float accelerationCoefficient;
 }
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration;
@@ -22,7 +23,8 @@
 @property float xVelocity;
 @property float yVelocity;
 @property float zVelocity;
-@property int xPos;
-@property int yPos;
+@property float xPos;
+@property float yPos;
+@property float accelerationCoefficient;
 
 @end
