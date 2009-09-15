@@ -1,7 +1,7 @@
-#import <SenTestingKit/SenTestingKit.h>
+#import "GTMSenTestCase.h"
 #import <UIKit/UIKit.h>
 
-@interface BallTest : SenTestCase {
+@interface BallTest :GTMTestCase {
 }
 
 @end

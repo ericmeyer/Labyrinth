@@ -4,7 +4,8 @@
 
 @implementation BallTest
 
-- (void) testBallExists {
+- (void) testBallExists 
+{
 	Ball* ball = [[Ball alloc] init];
 	
 	STAssertNotNil(ball, @"");
