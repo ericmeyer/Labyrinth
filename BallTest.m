@@ -32,8 +32,8 @@
 	UIAccelerometer *accelerometer = [[UIAccelerometer alloc] init];
 	[ball accelerometer: accelerometer didAccelerate: acceleration];
 	
-	STAssertEquals(1.0f * ball.accelerationCoefficient, ball.xVelocity, nil);
-	STAssertEquals(50.0f + (1/60.0f * ball.accelerationCoefficient), ball.xPos, nil);
+	STAssertEquals(-1.0f * ball.accelerationCoefficient, ball.xVelocity, nil);
+	STAssertEquals(50.0f + (1/60.0f * ball.accelerationCoefficient) * -1.0f, ball.xPos, nil);
 }
 
 -(void) testMoveOneTick {
