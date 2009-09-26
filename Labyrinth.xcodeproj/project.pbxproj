@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07AB150F106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB150D106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m */; };
+		07AB1512106E5200006CC6E7 /* LabyrinthAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* LabyrinthAppDelegate.m */; };
+		07AB151E106E5242006CC6E7 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63BC11060935900068FCE /* OCMock.framework */; };
 		07C63B4E10608F6300068FCE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63B4910608F6300068FCE /* AudioToolbox.framework */; };
 		07C63B4F10608F6300068FCE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63B4A10608F6300068FCE /* AVFoundation.framework */; };
 		07C63B5010608F6300068FCE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63B4B10608F6300068FCE /* OpenAL.framework */; };
@@ -160,7 +163,6 @@
 		07FF25E9106CE71A0075DC1E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63B4C10608F6300068FCE /* OpenGLES.framework */; };
 		07FF25FF106CE72F0075DC1E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63B4D10608F6300068FCE /* QuartzCore.framework */; };
 		07FF263D106CE7350075DC1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		07FF2646106CE73B0075DC1E /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63BC11060935900068FCE /* OCMock.framework */; };
 		07FF2694106CE7400075DC1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		07FF26B4106CE7450075DC1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		07FF26C3106CEA1B0075DC1E /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0760733D104C7ED500890E7D /* GTMIPhoneUnitTestDelegate.m */; };
@@ -186,6 +188,8 @@
 		0760733E104C7ED500890E7D /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = "Google Toolbox/GTMIPhoneUnitTestMain.m"; sourceTree = "<group>"; };
 		0760733F104C7ED500890E7D /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSenTestCase.h; path = "Google Toolbox/GTMSenTestCase.h"; sourceTree = "<group>"; };
 		07607340104C7ED500890E7D /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSenTestCase.m; path = "Google Toolbox/GTMSenTestCase.m"; sourceTree = "<group>"; };
+		07AB150C106E4B63006CC6E7 /* LabyrinthAppDelegateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabyrinthAppDelegateTest.h; path = Classes/LabyrinthAppDelegateTest.h; sourceTree = "<group>"; };
+		07AB150D106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabyrinthAppDelegateTest.m; path = Classes/LabyrinthAppDelegateTest.m; sourceTree = "<group>"; };
 		07C63B4910608F6300068FCE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		07C63B4A10608F6300068FCE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		07C63B4B10608F6300068FCE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -381,9 +385,9 @@
 				07FF25E9106CE71A0075DC1E /* OpenGLES.framework in Frameworks */,
 				07FF25FF106CE72F0075DC1E /* QuartzCore.framework in Frameworks */,
 				07FF263D106CE7350075DC1E /* UIKit.framework in Frameworks */,
-				07FF2646106CE73B0075DC1E /* OCMock.framework in Frameworks */,
 				07FF2694106CE7400075DC1E /* Foundation.framework in Frameworks */,
 				07FF26B4106CE7450075DC1E /* CoreGraphics.framework in Frameworks */,
+				07AB151E106E5242006CC6E7 /* OCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +717,8 @@
 		F8C286E910069A7F002ECCBB /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				07AB150C106E4B63006CC6E7 /* LabyrinthAppDelegateTest.h */,
+				07AB150D106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m */,
 				F8C287A310069F56002ECCBB /* BallTest.h */,
 				F8C287A410069F56002ECCBB /* BallTest.m */,
 				F8CCA7B1100FD6990093EC7C /* UIAcceleration+Settable.h */,
@@ -731,6 +737,7 @@
 				07FF2492106CE68E0075DC1E /* Resources */,
 				07FF2493106CE68E0075DC1E /* Sources */,
 				07FF2494106CE68E0075DC1E /* Frameworks */,
+				07AB1538106E5686006CC6E7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -795,11 +802,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07AB1538106E5686006CC6E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Google\\ Toolbox/RunIPhoneUnitTest.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07FF2493106CE68E0075DC1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07AB1512106E5200006CC6E7 /* LabyrinthAppDelegate.m in Sources */,
 				07FF257D106CE6DE0075DC1E /* Action.m in Sources */,
 				07FF26C3106CEA1B0075DC1E /* GTMIPhoneUnitTestDelegate.m in Sources */,
 				07FF26C4106CEA1B0075DC1E /* GTMIPhoneUnitTestMain.m in Sources */,
@@ -873,6 +897,7 @@
 				07FF25C0106CE6DE0075DC1E /* CJSONDeserializer.m in Sources */,
 				07FF25C1106CE6DE0075DC1E /* CJSONScanner.m in Sources */,
 				07FF25C2106CE6DE0075DC1E /* CJSONSerializer.m in Sources */,
+				07AB150F106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

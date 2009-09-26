@@ -1,24 +1,22 @@
 #import "LabyrinthAppDelegate.h"
 #import "LabyrinthViewController.h"
+#import "Scene.h"
 
 @implementation LabyrinthAppDelegate
 
-@synthesize window;
-@synthesize viewController;
+@synthesize directorFactory;
+@synthesize director;
 
+- (void)applicationDidFinishLaunching:(UIApplication *)application 
+{	
+	Scene *scene = [Scene node];
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    
-    // Override point for customization after app launch    
-    [window addSubview:viewController.view];
-    [window makeKeyAndVisible];
+	[[Director sharedDirector] runWithScene:scene];
 }
 
-
-- (void)dealloc {
-    [viewController release];
-    [window release];
-    [super dealloc];
+- (void)dealloc 
+{
+	[super dealloc];
 }
 
 

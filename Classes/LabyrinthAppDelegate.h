@@ -7,16 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DirectorFactory.h"
+#import "Director.h"
 
 @class LabyrinthViewController;
 
-@interface LabyrinthAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
-    LabyrinthViewController *viewController;
+@interface LabyrinthAppDelegate : NSObject <UIApplicationDelegate> 
+{
+	DirectorFactory					*directorFactory;
+	Director								*director;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet LabyrinthViewController *viewController;
+@property (nonatomic, retain) IBOutlet DirectorFactory *directorFactory;
+@property (nonatomic, retain) Director *director;
 
 @end
 
