@@ -2,20 +2,32 @@
 #import "LabyrinthAppDelegate.h"
 #import "Director.h"
 #import "Scene.h"
+#import "LabyrinthLayer.h"
 #import "LabyrinthAppDelegateTest.h"
 
 @implementation LabyrinthAppDelegateTest
 
--(void) testAddsSceneToSharedDirector
+-(void) finishLaunchingApplication
+{
+	[delegate applicationDidFinishLaunching:nil];
+	[[Director sharedDirector] performSelector:@selector(mainLoop)];
+}
+
+-(LabyrinthLayer *) layerFromRunningScene
+{
+	Scene *runningScene = [[Director sharedDirector] runningScene];
+	return (LabyrinthLayer *)[[runningScene children] objectAtIndex: 0];
+}
+
+-(void) testAddsLabyrinthLayerToSceneAtZero
 {
 	delegate = [[LabyrinthAppDelegate alloc] init];
 	
-	[delegate applicationDidFinishLaunching:nil];
-	[[Director sharedDirector] performSelector:@selector(mainLoop)];
+	[self finishLaunchingApplication];
+
+	LabyrinthLayer *labyrinthLayer = [self layerFromRunningScene];
 	
-	Scene *runningScene = [[Director sharedDirector] runningScene];
-	
-	STAssertNotNil(runningScene, nil);
+	STAssertEquals(labyrinthLayer.zOrder, 0, nil);
 }
 
 

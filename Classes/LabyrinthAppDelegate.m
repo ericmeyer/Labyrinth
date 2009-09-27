@@ -1,16 +1,14 @@
 #import "LabyrinthAppDelegate.h"
 #import "LabyrinthViewController.h"
+#import "LabyrinthLayer.h"
 #import "Scene.h"
 
 @implementation LabyrinthAppDelegate
 
-@synthesize directorFactory;
-@synthesize director;
-
 - (void)applicationDidFinishLaunching:(UIApplication *)application 
 {	
 	Scene *scene = [Scene node];
-
+	[scene addChild:[LabyrinthLayer node]];
 	[[Director sharedDirector] runWithScene:scene];
 }
 
