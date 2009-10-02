@@ -8,17 +8,32 @@
 
 @synthesize window;
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application 
-{	
-	//[[Director sharedDirector] attachInView:window];
-	[window setUserInteractionEnabled:YES];
-	
+-(void) runWithLabyrinthLayer
+{
 	Scene *scene = [Scene node];
 	[scene addChild:[LabyrinthLayer node]];
 	[[DirectorWrapper sharedDirector] runWithScene:scene];
 }
 
-- (void)dealloc 
+-(void) attachViewToDirector
+{
+	[[DirectorWrapper sharedDirector] attachInView:window];
+}
+
+-(void) initWindow
+{
+	[window setUserInteractionEnabled:YES];
+	[window setMultipleTouchEnabled:YES];
+}
+
+-(void) applicationDidFinishLaunching:(UIApplication *)application 
+{	
+	[self attachViewToDirector];
+	[self initWindow];
+	[self runWithLabyrinthLayer];
+}
+
+-(void) dealloc 
 {
 	[window release];
 	[super dealloc];

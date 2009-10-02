@@ -55,15 +55,22 @@
 	STAssertEquals(delegate.window.userInteractionEnabled, YES, nil);
 }
 
-//-(void) testDirectorIsAttachedToWindow
-//{
-//	[self finishLaunchingApplication];
-//	
-//	STAssertNotNil([Director sharedDirector].openGLView, nil);
-//}
+-(void) testMultitouchEnabled
+{
+	[delegate.window setMultipleTouchEnabled:NO];
+	
+	[delegate applicationDidFinishLaunching:nil];
+	
+	STAssertEquals(delegate.window.isMultipleTouchEnabled, YES, nil);
+}
 
-//// cocos2d will inherit these values
-//[window setUserInteractionEnabled:YES];	
-//[window setMultipleTouchEnabled:YES];
+-(void) testDirectorIsAttachedToWindow
+{
+	[[director expect] attachInView:delegate.window];
+	
+	[delegate applicationDidFinishLaunching:nil];
+	
+	[director verify];
+}
 
 @end

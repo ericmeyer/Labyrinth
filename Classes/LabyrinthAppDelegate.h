@@ -12,7 +12,7 @@
 
 @interface LabyrinthAppDelegate : NSObject <UIApplicationDelegate> 
 {
-	UIWindow *window;
+	IBOutlet UIWindow *window;
 }
 
 @property(nonatomic, retain) UIWindow *window;
