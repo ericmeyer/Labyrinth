@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Director.h"
 
 @class LabyrinthViewController;
 
 @interface LabyrinthAppDelegate : NSObject <UIApplicationDelegate> 
 {
+	UIWindow *window;
 }
+
+@property(nonatomic, retain) UIWindow *window;
 
 @end
 

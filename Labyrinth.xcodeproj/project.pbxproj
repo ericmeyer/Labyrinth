@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071434CB1076170A00BAA9E4 /* OCMConstraint+SceneCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 071434CA1076170A00BAA9E4 /* OCMConstraint+SceneCheck.m */; };
+		07917C6D1074CAF000351E9E /* DirectorWrapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07917C6C1074CAF000351E9E /* DirectorWrapperTest.m */; };
+		07917C751074CB5200351E9E /* DirectorWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 07917C741074CB5200351E9E /* DirectorWrapper.m */; };
+		07917C761074CB5200351E9E /* DirectorWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 07917C741074CB5200351E9E /* DirectorWrapper.m */; };
 		07AB150F106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB150D106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m */; };
 		07AB1512106E5200006CC6E7 /* LabyrinthAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* LabyrinthAppDelegate.m */; };
 		07AB151E106E5242006CC6E7 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63BC11060935900068FCE /* OCMock.framework */; };
@@ -184,6 +188,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		071434C91076170A00BAA9E4 /* OCMConstraint+SceneCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCMConstraint+SceneCheck.h"; sourceTree = "<group>"; };
+		071434CA1076170A00BAA9E4 /* OCMConstraint+SceneCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OCMConstraint+SceneCheck.m"; sourceTree = "<group>"; };
 		07607328104C7E5000890E7D /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		0760733B104C7ED500890E7D /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = "Google Toolbox/GTMDefines.h"; sourceTree = "<group>"; };
 		0760733C104C7ED500890E7D /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMIPhoneUnitTestDelegate.h; path = "Google Toolbox/GTMIPhoneUnitTestDelegate.h"; sourceTree = "<group>"; };
@@ -191,6 +197,10 @@
 		0760733E104C7ED500890E7D /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMIPhoneUnitTestMain.m; path = "Google Toolbox/GTMIPhoneUnitTestMain.m"; sourceTree = "<group>"; };
 		0760733F104C7ED500890E7D /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMSenTestCase.h; path = "Google Toolbox/GTMSenTestCase.h"; sourceTree = "<group>"; };
 		07607340104C7ED500890E7D /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMSenTestCase.m; path = "Google Toolbox/GTMSenTestCase.m"; sourceTree = "<group>"; };
+		07917C6B1074CAF000351E9E /* DirectorWrapperTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectorWrapperTest.h; sourceTree = "<group>"; };
+		07917C6C1074CAF000351E9E /* DirectorWrapperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectorWrapperTest.m; sourceTree = "<group>"; };
+		07917C731074CB5200351E9E /* DirectorWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectorWrapper.h; sourceTree = "<group>"; };
+		07917C741074CB5200351E9E /* DirectorWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectorWrapper.m; sourceTree = "<group>"; };
 		07AB150C106E4B63006CC6E7 /* LabyrinthAppDelegateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabyrinthAppDelegateTest.h; path = Classes/LabyrinthAppDelegateTest.h; sourceTree = "<group>"; };
 		07AB150D106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabyrinthAppDelegateTest.m; path = Classes/LabyrinthAppDelegateTest.m; sourceTree = "<group>"; };
 		07AB1683106ED68F006CC6E7 /* LabyrinthLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabyrinthLayer.h; path = ../LabyrinthLayer.h; sourceTree = "<group>"; };
@@ -653,6 +663,8 @@
 				28D7ACF70DDB3853001CB0EB /* LabyrinthViewController.m */,
 				F8C287C81006A0FB002ECCBB /* Ball.h */,
 				F8C287C91006A0FB002ECCBB /* Ball.m */,
+				07917C731074CB5200351E9E /* DirectorWrapper.h */,
+				07917C741074CB5200351E9E /* DirectorWrapper.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -734,6 +746,10 @@
 				F8CCA7B2100FD6990093EC7C /* UIAcceleration+Settable.m */,
 				07AB16AC106F0CCB006CC6E7 /* LabyrinthLayerTest.h */,
 				07AB16AD106F0CCB006CC6E7 /* LabyrinthLayerTest.m */,
+				07917C6B1074CAF000351E9E /* DirectorWrapperTest.h */,
+				07917C6C1074CAF000351E9E /* DirectorWrapperTest.m */,
+				071434C91076170A00BAA9E4 /* OCMConstraint+SceneCheck.h */,
+				071434CA1076170A00BAA9E4 /* OCMConstraint+SceneCheck.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -911,6 +927,9 @@
 				07AB150F106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m in Sources */,
 				07AB1686106ED68F006CC6E7 /* LabyrinthLayer.m in Sources */,
 				07AB16AE106F0CCB006CC6E7 /* LabyrinthLayerTest.m in Sources */,
+				07917C6D1074CAF000351E9E /* DirectorWrapperTest.m in Sources */,
+				07917C751074CB5200351E9E /* DirectorWrapper.m in Sources */,
+				071434CB1076170A00BAA9E4 /* OCMConstraint+SceneCheck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,6 +1013,7 @@
 				07FF257B106CE6DE0075DC1E /* CJSONScanner.m in Sources */,
 				07FF257C106CE6DE0075DC1E /* CJSONSerializer.m in Sources */,
 				07AB1685106ED68F006CC6E7 /* LabyrinthLayer.m in Sources */,
+				07917C761074CB5200351E9E /* DirectorWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,5 +3,6 @@
 @interface LabyrinthAppDelegateTest : GTMTestCase
 {
 	LabyrinthAppDelegate *delegate;
+	OCMockObject				 *director;
 }
 @end

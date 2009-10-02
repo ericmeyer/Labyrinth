@@ -5,7 +5,9 @@
 
 -(void) testDrawsBackground
 {
-	STAssertTrue((1+1) == 3, @"You've got a failing test");
+	LabyrinthLayer *layer = [[[LabyrinthLayer alloc] init] autorelease];
+	
+	STAssertEquals([layer.children count], (NSUInteger) 1, nil);
 }
 
 @end
