@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "CocosNode.h"
 
+typedef enum tagNodes
+{
+	BACKGROUND
+} Node;
+
 @interface LabyrinthLayer : CocosNode {
 
 }
