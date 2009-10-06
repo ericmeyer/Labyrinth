@@ -23,6 +23,7 @@
 		CGSize size = [[DirectorWrapper sharedDirector] winSize];
 		
 		AtlasSprite *backgroundSprite = [AtlasSprite spriteWithRect:CGRectMake(0.0, 0.0, size.width, size.height) spriteManager:mgr];
+		backgroundSprite.position = ccp(size.width / 2, size.height / 2);
 		[mgr addChild:backgroundSprite z:0 tag:kTagBackground];
 	}
 	

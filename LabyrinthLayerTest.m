@@ -4,6 +4,7 @@
 #import "AtlasSpriteManager.h"
 #import "Director.h"
 #import "DirectorWrapper.h"
+#import "cocos2d.h"
 #import <OCMock/OCMock.h>
 
 @implementation LabyrinthLayerTest
@@ -20,7 +21,7 @@
 	[DirectorWrapper setSharedDirector:fixedSizeDirector];
 }	
 
--(void) testCreatesBackgroundSprite
+-(void) testCreatesBackgroundSpriteAtDirectorWidth
 {
 	[self setupFixedSizeDirector];
 	
@@ -29,6 +30,18 @@
 	AtlasSpriteManager *mgr = (AtlasSpriteManager *)[layer getChildByTag:kTagBackgroundManager];
 	AtlasSprite *sprite = (AtlasSprite *) [mgr getChildByTag:kTagBackground];
 	
-	STAssertEquals(sprite.textureRect, CGRectMake(0, 0, 100, 100), nil);	
-}	
+	STAssertEquals(sprite.textureRect, CGRectMake(0, 0, 100, 100), nil);
+}
+
+-(void) testSetsBackgroundSpriteToCenter
+{
+	[self setupFixedSizeDirector];
+	
+	LabyrinthLayer *layer = [[[LabyrinthLayer alloc] init] autorelease];
+	
+	AtlasSpriteManager *mgr = (AtlasSpriteManager *)[layer getChildByTag:kTagBackgroundManager];
+	AtlasSprite *sprite = (AtlasSprite *) [mgr getChildByTag:kTagBackground];
+	
+	STAssertEquals(sprite.position, ccp(50.0, 50.0), nil);
+}
 @end
