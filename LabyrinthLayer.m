@@ -9,7 +9,7 @@
 #import "LabyrinthLayer.h"
 #import "cocos2d.h"
 #import "Label.h"
-#import "Director.h"
+#import "DirectorWrapper.h"
 
 @implementation LabyrinthLayer
 
@@ -17,13 +17,34 @@
 {
 	if(self = [super init])
 	{
-		Sprite *bg = [Sprite spriteWithFile:@"table.png"];
-
-		// add the label as a child to this Layer
-		[self addChild:bg z:0 tag:BACKGROUND];
+		AtlasSpriteManager *mgr = [AtlasSpriteManager spriteManagerWithFile:@"table.png"];
+		[self addChild:mgr z:0 tag:kTagBackgroundManager];
+		
+		CGSize size = [[DirectorWrapper sharedDirector] winSize];
+		
+		AtlasSprite *backgroundSprite = [AtlasSprite spriteWithRect:CGRectMake(0.0, 0.0, size.width, size.height) spriteManager:mgr];
+		[mgr addChild:backgroundSprite z:0 tag:kTagBackground];
 	}
 	
 	return self;
-}
+
+}	
+//return self;
+//}
+//
+//-(void) addNewSpriteWithCoords:(CGPoint)p
+//{
+//	AtlasSpriteManager *mgr = (AtlasSpriteManager*) [self getChildByTag:kTagSpriteManager];
+//	
+//	int idx = CCRANDOM_0_1() * 1400 / 100;
+//	int x = (idx%5) * 85;
+//	int y = (idx/5) * 121;
+//	
+//	
+//	AtlasSprite *sprite = [AtlasSprite spriteWithRect:CGRectMake(x,y,85,121) spriteManager:mgr];
+//	[mgr addChild:sprite];
+//}
+
+
 
 @end

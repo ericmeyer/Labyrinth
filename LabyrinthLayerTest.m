@@ -1,15 +1,34 @@
 #import "LabyrinthLayerTest.h"
 #import "LabyrinthLayer.h"
-#import "Sprite.h"
+#import "AtlasSprite.h"
+#import "AtlasSpriteManager.h"
+#import "Director.h"
+#import "DirectorWrapper.h"
+#import <OCMock/OCMock.h>
 
 @implementation LabyrinthLayerTest
 
--(void) testDrawsBackground
+-(void) setupFixedSizeDirector
 {
-	LabyrinthLayer *layer = [[[LabyrinthLayer alloc] init] autorelease];
-	Sprite *bg = [Sprite spriteWithFile:@"table.png"];
+	CGSize size;
+	size.height = 100;
+	size.width = 100;
 	
-	STAssertEquals([layer getChildByTag:BACKGROUND], bg, nil);
-}
+	OCMockObject *fixedSizeDirector = [OCMockObject niceMockForClass:[Director class]];
+	[[[fixedSizeDirector stub] andReturnValue: [NSValue valueWithCGSize:size]] winSize];
+	
+	[DirectorWrapper setSharedDirector:fixedSizeDirector];
+}	
 
+-(void) testCreatesBackgroundSprite
+{
+	[self setupFixedSizeDirector];
+	
+	LabyrinthLayer *layer = [[[LabyrinthLayer alloc] init] autorelease];
+	
+	AtlasSpriteManager *mgr = (AtlasSpriteManager *)[layer getChildByTag:kTagBackgroundManager];
+	AtlasSprite *sprite = (AtlasSprite *) [mgr getChildByTag:kTagBackground];
+	
+	STAssertEquals(sprite.textureRect, CGRectMake(0, 0, 100, 100), nil);	
+}	
 @end

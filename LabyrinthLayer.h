@@ -9,10 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "CocosNode.h"
 
-typedef enum tagNodes
+typedef enum tagManagers
 {
-	BACKGROUND
-} Node;
+	kTagBackgroundManager
+} Manager;
+
+typedef enum tagSprites
+{
+	kTagBackground,
+} GameSprite;
 
 @interface LabyrinthLayer : CocosNode {
 
