@@ -1,15 +1,14 @@
 #import "LabyrinthViewController.h"
-#import "AccelerometerSimulation.h"
 
 @implementation LabyrinthViewController
 
 - (void)viewDidLoad
 {
-	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
-	accelerometer.delegate = ball;
-	accelerometer.updateInterval = 1.0f/60.0f;
-	
-	[ball addObserver:self forKeyPath:@"xVelocity" options:NSKeyValueObservingOptionNew context:NULL];	
+//	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
+//	accelerometer.delegate = ball;
+//	accelerometer.updateInterval = 1.0f/60.0f;
+//	
+//	[ball addObserver:self forKeyPath:@"xVelocity" options:NSKeyValueObservingOptionNew context:NULL];	
 }
 
 - (void)didReceiveMemoryWarning 
@@ -19,7 +18,7 @@
 
 - (void)dealloc 
 {
-	[ball release];
+//	[ball release];
 	[super dealloc];
 }
 

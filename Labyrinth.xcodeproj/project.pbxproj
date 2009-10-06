@@ -186,8 +186,6 @@
 		2899E5220DE3E06400AC0155 /* LabyrinthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* LabyrinthViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* LabyrinthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* LabyrinthViewController.m */; };
-		F84C9A6F1017EEFC0021B6DD /* AccelerometerSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = F84C9A6E1017EEFC0021B6DD /* AccelerometerSimulation.m */; };
-		F8C287CB1006A0FB002ECCBB /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C287C91006A0FB002ECCBB /* Ball.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -218,8 +216,6 @@
 		07C63B4C10608F6300068FCE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		07C63B4D10608F6300068FCE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		07C63B5E10608FFD00068FCE /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
-		07C63B9C106090AB00068FCE /* LabyrinthDelegateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabyrinthDelegateTest.h; sourceTree = "<group>"; };
-		07C63B9D106090AB00068FCE /* LabyrinthDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabyrinthDelegateTest.m; sourceTree = "<group>"; };
 		07C63BC11060935900068FCE /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
 		07FF2496106CE68E0075DC1E /* Unit Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FF2498106CE68E0075DC1E /* Unit Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unit Test-Info.plist"; sourceTree = "<group>"; };
@@ -383,14 +379,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Labyrinth_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Labyrinth_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Labyrinth-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Labyrinth-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		F84C9A6D1017EEFC0021B6DD /* AccelerometerSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerSimulation.h; sourceTree = "<group>"; };
-		F84C9A6E1017EEFC0021B6DD /* AccelerometerSimulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerSimulation.m; sourceTree = "<group>"; };
 		F8C2878A10069ECF002ECCBB /* UT2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UT2-Info.plist"; sourceTree = "<group>"; };
 		F8C2879610069F20002ECCBB /* Unit Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unit Tests-Info.plist"; sourceTree = "<group>"; };
-		F8C287A310069F56002ECCBB /* BallTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallTest.h; sourceTree = "<group>"; };
-		F8C287A410069F56002ECCBB /* BallTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallTest.m; sourceTree = "<group>"; };
-		F8C287C81006A0FB002ECCBB /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
-		F8C287C91006A0FB002ECCBB /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
 		F8CCA7B1100FD6990093EC7C /* UIAcceleration+Settable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAcceleration+Settable.h"; sourceTree = "<group>"; };
 		F8CCA7B2100FD6990093EC7C /* UIAcceleration+Settable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAcceleration+Settable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -660,14 +650,10 @@
 			children = (
 				07AB1683106ED68F006CC6E7 /* TableLayer.h */,
 				07AB1684106ED68F006CC6E7 /* TableLayer.m */,
-				F84C9A6D1017EEFC0021B6DD /* AccelerometerSimulation.h */,
-				F84C9A6E1017EEFC0021B6DD /* AccelerometerSimulation.m */,
 				1D3623240D0F684500981E51 /* LabyrinthAppDelegate.h */,
 				1D3623250D0F684500981E51 /* LabyrinthAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* LabyrinthViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* LabyrinthViewController.m */,
-				F8C287C81006A0FB002ECCBB /* Ball.h */,
-				F8C287C91006A0FB002ECCBB /* Ball.m */,
 				07917C731074CB5200351E9E /* DirectorWrapper.h */,
 				07917C741074CB5200351E9E /* DirectorWrapper.m */,
 			);
@@ -705,8 +691,6 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				07C63B9C106090AB00068FCE /* LabyrinthDelegateTest.h */,
-				07C63B9D106090AB00068FCE /* LabyrinthDelegateTest.m */,
 				32CA4F630368D1EE00C91783 /* Labyrinth_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -747,8 +731,6 @@
 			children = (
 				07AB150C106E4B63006CC6E7 /* LabyrinthAppDelegateTest.h */,
 				07AB150D106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m */,
-				F8C287A310069F56002ECCBB /* BallTest.h */,
-				F8C287A410069F56002ECCBB /* BallTest.m */,
 				F8CCA7B1100FD6990093EC7C /* UIAcceleration+Settable.h */,
 				F8CCA7B2100FD6990093EC7C /* UIAcceleration+Settable.m */,
 				07AB16AC106F0CCB006CC6E7 /* TableLayerTest.h */,
@@ -950,8 +932,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* LabyrinthAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* LabyrinthViewController.m in Sources */,
-				F8C287CB1006A0FB002ECCBB /* Ball.m in Sources */,
-				F84C9A6F1017EEFC0021B6DD /* AccelerometerSimulation.m in Sources */,
 				07FF2537106CE6DE0075DC1E /* Action.m in Sources */,
 				07FF2538106CE6DE0075DC1E /* ActionManager.m in Sources */,
 				07FF2539106CE6DE0075DC1E /* AtlasNode.m in Sources */,
