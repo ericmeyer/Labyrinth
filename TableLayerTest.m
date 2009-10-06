@@ -14,7 +14,8 @@
 	CGSize size;
 	size.height = 100;
 	size.width = 100;
-	
+
+	// Might want to make my own version of this if I use it a lot
 	OCMockObject *fixedSizeDirector = [OCMockObject niceMockForClass:[Director class]];
 	[[[fixedSizeDirector stub] andReturnValue: [NSValue valueWithCGSize:size]] winSize];
 	
