@@ -1,6 +1,6 @@
 #import "LabyrinthAppDelegate.h"
 #import "LabyrinthViewController.h"
-#import "LabyrinthLayer.h"
+#import "TableLayer.h"
 #import "DirectorWrapper.h"
 #import "Scene.h"
 
@@ -11,7 +11,7 @@
 -(void) runWithLabyrinthLayer
 {
 	Scene *scene = [Scene node];
-	[scene addChild:[LabyrinthLayer node]];
+	[scene addChild:[TableLayer node]];
 	[[DirectorWrapper sharedDirector] runWithScene:scene];
 }
 

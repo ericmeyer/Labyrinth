@@ -6,12 +6,12 @@
 //  Copyright 2009 8th Light. All rights reserved.
 //
 
-#import "LabyrinthLayer.h"
+#import "TableLayer.h"
 #import "cocos2d.h"
 #import "Label.h"
 #import "DirectorWrapper.h"
 
-@implementation LabyrinthLayer
+@implementation TableLayer
 
 -(id) init
 {
@@ -28,24 +28,6 @@
 	}
 	
 	return self;
-
-}	
-//return self;
-//}
-//
-//-(void) addNewSpriteWithCoords:(CGPoint)p
-//{
-//	AtlasSpriteManager *mgr = (AtlasSpriteManager*) [self getChildByTag:kTagSpriteManager];
-//	
-//	int idx = CCRANDOM_0_1() * 1400 / 100;
-//	int x = (idx%5) * 85;
-//	int y = (idx/5) * 121;
-//	
-//	
-//	AtlasSprite *sprite = [AtlasSprite spriteWithRect:CGRectMake(x,y,85,121) spriteManager:mgr];
-//	[mgr addChild:sprite];
-//}
-
-
+}
 
 @end

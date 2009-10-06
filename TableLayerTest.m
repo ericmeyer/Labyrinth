@@ -1,5 +1,5 @@
-#import "LabyrinthLayerTest.h"
-#import "LabyrinthLayer.h"
+#import "TableLayerTest.h"
+#import "TableLayer.h"
 #import "AtlasSprite.h"
 #import "AtlasSpriteManager.h"
 #import "Director.h"
@@ -7,7 +7,7 @@
 #import "cocos2d.h"
 #import <OCMock/OCMock.h>
 
-@implementation LabyrinthLayerTest
+@implementation TableLayerTest
 
 -(void) setupFixedSizeDirector
 {
@@ -25,7 +25,7 @@
 {
 	[self setupFixedSizeDirector];
 	
-	LabyrinthLayer *layer = [[[LabyrinthLayer alloc] init] autorelease];
+	TableLayer *layer = [[[TableLayer alloc] init] autorelease];
 	
 	AtlasSpriteManager *mgr = (AtlasSpriteManager *)[layer getChildByTag:kTagBackgroundManager];
 	AtlasSprite *sprite = (AtlasSprite *) [mgr getChildByTag:kTagBackground];
@@ -37,7 +37,7 @@
 {
 	[self setupFixedSizeDirector];
 	
-	LabyrinthLayer *layer = [[[LabyrinthLayer alloc] init] autorelease];
+	TableLayer *layer = [[[TableLayer alloc] init] autorelease];
 	
 	AtlasSpriteManager *mgr = (AtlasSpriteManager *)[layer getChildByTag:kTagBackgroundManager];
 	AtlasSprite *sprite = (AtlasSprite *) [mgr getChildByTag:kTagBackground];

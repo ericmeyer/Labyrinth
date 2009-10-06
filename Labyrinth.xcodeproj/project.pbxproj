@@ -17,9 +17,9 @@
 		07AB150F106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB150D106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m */; };
 		07AB1512106E5200006CC6E7 /* LabyrinthAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* LabyrinthAppDelegate.m */; };
 		07AB151E106E5242006CC6E7 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63BC11060935900068FCE /* OCMock.framework */; };
-		07AB1685106ED68F006CC6E7 /* LabyrinthLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB1684106ED68F006CC6E7 /* LabyrinthLayer.m */; };
-		07AB1686106ED68F006CC6E7 /* LabyrinthLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB1684106ED68F006CC6E7 /* LabyrinthLayer.m */; };
-		07AB16AE106F0CCB006CC6E7 /* LabyrinthLayerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB16AD106F0CCB006CC6E7 /* LabyrinthLayerTest.m */; };
+		07AB1685106ED68F006CC6E7 /* TableLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB1684106ED68F006CC6E7 /* TableLayer.m */; };
+		07AB1686106ED68F006CC6E7 /* TableLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB1684106ED68F006CC6E7 /* TableLayer.m */; };
+		07AB16AE106F0CCB006CC6E7 /* TableLayerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB16AD106F0CCB006CC6E7 /* TableLayerTest.m */; };
 		07C63B4E10608F6300068FCE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63B4910608F6300068FCE /* AudioToolbox.framework */; };
 		07C63B4F10608F6300068FCE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63B4A10608F6300068FCE /* AVFoundation.framework */; };
 		07C63B5010608F6300068FCE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C63B4B10608F6300068FCE /* OpenAL.framework */; };
@@ -208,10 +208,10 @@
 		07917C741074CB5200351E9E /* DirectorWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectorWrapper.m; sourceTree = "<group>"; };
 		07AB150C106E4B63006CC6E7 /* LabyrinthAppDelegateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabyrinthAppDelegateTest.h; path = Classes/LabyrinthAppDelegateTest.h; sourceTree = "<group>"; };
 		07AB150D106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabyrinthAppDelegateTest.m; path = Classes/LabyrinthAppDelegateTest.m; sourceTree = "<group>"; };
-		07AB1683106ED68F006CC6E7 /* LabyrinthLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabyrinthLayer.h; path = ../LabyrinthLayer.h; sourceTree = "<group>"; };
-		07AB1684106ED68F006CC6E7 /* LabyrinthLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabyrinthLayer.m; path = ../LabyrinthLayer.m; sourceTree = "<group>"; };
-		07AB16AC106F0CCB006CC6E7 /* LabyrinthLayerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabyrinthLayerTest.h; sourceTree = "<group>"; };
-		07AB16AD106F0CCB006CC6E7 /* LabyrinthLayerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabyrinthLayerTest.m; sourceTree = "<group>"; };
+		07AB1683106ED68F006CC6E7 /* TableLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableLayer.h; path = ../TableLayer.h; sourceTree = "<group>"; };
+		07AB1684106ED68F006CC6E7 /* TableLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableLayer.m; path = ../TableLayer.m; sourceTree = "<group>"; };
+		07AB16AC106F0CCB006CC6E7 /* TableLayerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableLayerTest.h; sourceTree = "<group>"; };
+		07AB16AD106F0CCB006CC6E7 /* TableLayerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableLayerTest.m; sourceTree = "<group>"; };
 		07C63B4910608F6300068FCE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		07C63B4A10608F6300068FCE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		07C63B4B10608F6300068FCE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -658,8 +658,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				07AB1683106ED68F006CC6E7 /* LabyrinthLayer.h */,
-				07AB1684106ED68F006CC6E7 /* LabyrinthLayer.m */,
+				07AB1683106ED68F006CC6E7 /* TableLayer.h */,
+				07AB1684106ED68F006CC6E7 /* TableLayer.m */,
 				F84C9A6D1017EEFC0021B6DD /* AccelerometerSimulation.h */,
 				F84C9A6E1017EEFC0021B6DD /* AccelerometerSimulation.m */,
 				1D3623240D0F684500981E51 /* LabyrinthAppDelegate.h */,
@@ -751,8 +751,8 @@
 				F8C287A410069F56002ECCBB /* BallTest.m */,
 				F8CCA7B1100FD6990093EC7C /* UIAcceleration+Settable.h */,
 				F8CCA7B2100FD6990093EC7C /* UIAcceleration+Settable.m */,
-				07AB16AC106F0CCB006CC6E7 /* LabyrinthLayerTest.h */,
-				07AB16AD106F0CCB006CC6E7 /* LabyrinthLayerTest.m */,
+				07AB16AC106F0CCB006CC6E7 /* TableLayerTest.h */,
+				07AB16AD106F0CCB006CC6E7 /* TableLayerTest.m */,
 				07917C6B1074CAF000351E9E /* DirectorWrapperTest.h */,
 				07917C6C1074CAF000351E9E /* DirectorWrapperTest.m */,
 				071434C91076170A00BAA9E4 /* OCMConstraint+SceneCheck.h */,
@@ -935,8 +935,8 @@
 				07FF25C1106CE6DE0075DC1E /* CJSONScanner.m in Sources */,
 				07FF25C2106CE6DE0075DC1E /* CJSONSerializer.m in Sources */,
 				07AB150F106E4B63006CC6E7 /* LabyrinthAppDelegateTest.m in Sources */,
-				07AB1686106ED68F006CC6E7 /* LabyrinthLayer.m in Sources */,
-				07AB16AE106F0CCB006CC6E7 /* LabyrinthLayerTest.m in Sources */,
+				07AB1686106ED68F006CC6E7 /* TableLayer.m in Sources */,
+				07AB16AE106F0CCB006CC6E7 /* TableLayerTest.m in Sources */,
 				07917C6D1074CAF000351E9E /* DirectorWrapperTest.m in Sources */,
 				07917C751074CB5200351E9E /* DirectorWrapper.m in Sources */,
 				071434CB1076170A00BAA9E4 /* OCMConstraint+SceneCheck.m in Sources */,
@@ -1022,7 +1022,7 @@
 				07FF257A106CE6DE0075DC1E /* CJSONDeserializer.m in Sources */,
 				07FF257B106CE6DE0075DC1E /* CJSONScanner.m in Sources */,
 				07FF257C106CE6DE0075DC1E /* CJSONSerializer.m in Sources */,
-				07AB1685106ED68F006CC6E7 /* LabyrinthLayer.m in Sources */,
+				07AB1685106ED68F006CC6E7 /* TableLayer.m in Sources */,
 				07917C761074CB5200351E9E /* DirectorWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

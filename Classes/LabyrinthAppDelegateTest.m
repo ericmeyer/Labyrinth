@@ -3,7 +3,7 @@
 #import "Director.h"
 #import "DirectorWrapper.h"
 #import "Scene.h"
-#import "LabyrinthLayer.h"
+#import "TableLayer.h"
 #import "LabyrinthAppDelegateTest.h"
 #import "OCMConstraint+SceneCheck.h"
 #import <OCMock/OCMock.h>
@@ -39,7 +39,7 @@
 
 -(void) testRunsWithScene
 {	
-	[[director expect] runWithScene:[OCMConstraint sceneWithLayer:[LabyrinthLayer class]]];
+	[[director expect] runWithScene:[OCMConstraint sceneWithLayer:[TableLayer class]]];
 	
 	[delegate applicationDidFinishLaunching:nil];
 	

@@ -19,7 +19,7 @@ typedef enum tagSprites
 	kTagBackground,
 } GameSprite;
 
-@interface LabyrinthLayer : CocosNode {
+@interface TableLayer : CocosNode {
 
 }
 
