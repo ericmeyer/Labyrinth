@@ -6,12 +6,12 @@
 //  Copyright 2009 8th Light. All rights reserved.
 //
 
-#import "TableLayer.h"
+#import "BallScene.h"
 #import "cocos2d.h"
 #import "Label.h"
 #import "DirectorWrapper.h"
 
-@implementation TableLayer
+@implementation BallScene
 
 -(id) init
 {

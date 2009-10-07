@@ -18,7 +18,6 @@
 
 - (void)dealloc 
 {
-//	[ball release];
 	[super dealloc];
 }
 
