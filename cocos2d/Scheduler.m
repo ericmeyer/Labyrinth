@@ -84,6 +84,7 @@
 	else
 		elapsed += dt;
 	if( elapsed >= interval ) {
+		NSLog(NSStringFromSelector(selector));
 		impMethod(target, selector, elapsed);
 		elapsed = 0;
 	}
